@@ -64,7 +64,7 @@ public class Application extends SpringBootServletInitializer {
 		beanFactory.autowireBean(restfulServer);
 		servletRegistrationBean.setServlet(restfulServer);
 		// servletRegistrationBean.addUrlMappings("/fhir/*");
-		servletRegistrationBean.addUrlMappings("/smart-pgd-fhir/*");
+		servletRegistrationBean.addUrlMappings("/smart-pgd-fhir/v2/*");
 		servletRegistrationBean.setLoadOnStartup(1);
 
 		return servletRegistrationBean;
